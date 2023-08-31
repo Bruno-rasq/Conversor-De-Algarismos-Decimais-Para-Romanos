@@ -36,3 +36,7 @@ BUG´s:
     - quando $click nas abas de seleção de formulário, possivel mudar o form clickando no mesmo botão
         -- sugestão: o problema está na propriedade classlist $Toggle.
     - script RomToDec, não funciona exatamente como deveria. possibilitando repetir um algarismo romn mais de 3x
+
+
+NOTA:
+    - link de acesso: https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/
