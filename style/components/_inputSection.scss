@@ -1,0 +1,109 @@
+
+.convert{
+    margin: 4.5% auto 0 auto;
+    max-width: 80rem;
+    height: 570px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(172, 130, 51);
+    border-radius: 15px 15px 0 0;
+    
+}
+
+
+.abas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 45px;
+    width: 100%;
+    margin-block: 100px 100px;
+
+}
+
+.abas  button {
+    height: 60px;
+    min-width: 180px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all .9s;
+
+    background-color: rgb(221, 221, 221);
+    color: black;
+
+}
+
+.abas .active{
+    background-color: rgb(27, 20, 58);
+    color: white;
+}
+
+
+
+.convert form{
+    width: 550px;
+    margin: 0 auto 15px auto;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.convert form > input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding-inline: 10px;
+    margin-block: 10px;
+}
+
+.convert form > button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: rgb(27, 20, 58);
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.convert form > button:hover{
+    background-color: rgb(10, 6, 27);
+}
+
+.convert p,
+.convert span{
+    color: white;
+}
+
+.convert span {
+    margin: 20px auto 0 auto;
+    font-size: 2rem;
+}
+
+.convert span::before{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 3px;
+}
+
+.convert span::after{
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 3px;
+}
