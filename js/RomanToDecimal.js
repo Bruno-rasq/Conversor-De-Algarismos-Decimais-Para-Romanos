@@ -1,12 +1,12 @@
 let btn_roman_to_decimal = document.querySelector("#decimal-submit");
-let span_decimal = document.querySelector("#decimal-span");
+let span_decimal = document.querySelector("#decimal-Span");
 
 
-btn_roman_to_decimal.addEventListener("click", function(e) {
+btn_roman_to_decimal.addEventListener("click", function (e) {
 
     e.preventDefault();
 
-    let strg = document.querySelector("#roman-input");
+    let strg = document.querySelector("#roman-input").value.toUpperCase();
 
     const decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
     const roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
@@ -14,21 +14,23 @@ btn_roman_to_decimal.addEventListener("click", function(e) {
     // verfica se o valor do input é válido
     if (strg == '' || typeof strg !== 'string' || strg == undefined) {
 
-        console.log('erro: valor inválido');
+        window.alert('erro: valor inválido');
 
-    }
+    } else {
 
-    let arabics = 0;
+        let arabics = 0;
 
-    for (let i = 0; i <= decimal.length; i++) {
+        for (let i = 0; i <= decimal.length; i++) {
 
-        while (strg.indexOf(roman[i]) === 0) {
+            while (strg.indexOf(roman[i]) === 0) {
 
-            arabics += decimal[i];
-            strg = strg.replace(roman[i], '');
+                arabics += decimal[i];
+                strg = strg.replace(roman[i], '');
+            }
         }
-    }
 
-    span_decimal.innerHTML = arabics;
+        document.querySelector("#decimal-submit") = '';
+        span_decimal.innerHTML = arabics;
+    }
 
 });
