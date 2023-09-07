@@ -9,29 +9,33 @@ header{
     height: 30px;
     padding-inline: 20px;
     padding-block: 8px;
-}
 
-.logo{
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: rgb(172, 130, 51);
-    font-family: 'Times New Roman', Times, serif;
-}
+    nav{
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            margin-top: 11px;
+        
+            li {
+                a{
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+    }
 
-.autor{
-    font-size: .9rem;
-    transform: translateX(-50%);
-}
-
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin-top: 11px;
-}
-
-header nav ul > li a{
-    font-size: 1.8rem;
-    text-decoration: none;
+    .logo{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: rgb(172, 130, 51);
+        font-family: 'Times New Roman', Times, serif;
+    }
     
+    .autor{
+        font-size: .9rem;
+        transform: translateX(-50%);
+    }
 }

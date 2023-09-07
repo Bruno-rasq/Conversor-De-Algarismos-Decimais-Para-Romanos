@@ -29,8 +29,7 @@ btn_roman_to_decimal.addEventListener("click", function (e) {
             }
         }
 
-        document.querySelector("#decimal-submit") = '';
-        span_decimal.innerHTML = arabics;
+        span_decimal.innerHTML = Number(arabics);
     }
 
 });
