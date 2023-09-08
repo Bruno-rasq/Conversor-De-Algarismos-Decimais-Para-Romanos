@@ -77,6 +77,16 @@ main h1 {
   letter-spacing: -0.4rem;
   color: rgb(172, 130, 51);
 }
+main .subtitle {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  color: rgb(139, 102, 33);
+  justify-content: right;
+}
+main .subtitle span {
+  color: rgb(172, 130, 51);
+}
 main .arrow {
   margin-top: 5rem;
   position: relative;
