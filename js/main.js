@@ -1,7 +1,6 @@
 import { DecimalParaRoman } from "./DecToRoman.js";
 import { RomanoParaDecimal } from "./RomanToDecimal.js";
 
-
 // evento de conversão de decimal para algarismo romana
 let btn = document.querySelector("#btn-submit");
 let span = document.querySelector("#roman");
@@ -9,7 +8,6 @@ let span = document.querySelector("#roman");
 btn.addEventListener("click", function(e) {
     
     e.preventDefault();
-
     let Response = DecimalParaRoman();
     span.innerHTML = Response
 

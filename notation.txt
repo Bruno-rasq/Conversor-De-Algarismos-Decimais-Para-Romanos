@@ -1,43 +1,14 @@
-function ConversorToRoman(n){
-
-    const Map = {
-        u: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], //unidade
-        d: ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"], //dezena
-        c: ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"], //centena
-        m: ["M", "MM", "MMM", "MMMM", "MMMMM"] // milhar
-    };
-
-    if( n > 0 && n < 5999){
-
-        let NumberToString = Number(n).toString();
-        let arry = NumberToString.split('').reverse();
-
-        let uni = Number(arry[0]);
-        let dez = Number(arry[1]);
-        let cen = Number(arry[2]);
-        let mil = Number(arry[3]);
-
-        arry[0] = Map.u[uni - 1] ?? "";
-        arry[1] = Map.d[dez - 1] ?? "";
-        arry[2] = Map.c[cen - 1] ?? "";
-        arry[3] = Map.m[mil - 1] ?? "";
-
-        let response = arry.reverse().join('');
-        console.log(response);
-
-    } else {
-        console.log("Valor inválido");
-    };
-}
-
 
 BUG´s:
-    - resultado do formulário rom To Dec não funcionando no projeto mas sim no console log.[checked]
+    - resultado do formulário rom To Dec não funcionando no projeto mas sim no console log.[RESOLVIDO]
     
     - quando $click nas abas de seleção de formulário, possivel mudar o form clickando no mesmo botão
         -- sugestão: o problema está na propriedade classlist $Toggle.
+        
     - script RomToDec, não funciona exatamente como deveria. possibilitando repetir um algarismo romn mais de 3x
 
 
 NOTA:
     - link de acesso: https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/
+
+    - Adicionei um script main.js que import funções de decToRom.js e RomanToDecimal.js
