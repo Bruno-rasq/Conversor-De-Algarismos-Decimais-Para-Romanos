@@ -1,10 +1,4 @@
-let btn_roman_to_decimal = document.querySelector("#decimal-submit");
-let span_decimal = document.querySelector("#decimal-Span");
-
-
-btn_roman_to_decimal.addEventListener("click", function (e) {
-
-    e.preventDefault();
+export function RomanoParaDecimal(){
 
     let strg = document.querySelector("#roman-input").value.toUpperCase();
 
@@ -29,7 +23,6 @@ btn_roman_to_decimal.addEventListener("click", function (e) {
             }
         }
 
-        span_decimal.innerHTML = Number(arabics);
+        return Number(arabics);
     }
-
-});
+}

@@ -1,12 +1,6 @@
-let btn = document.querySelector("#btn-submit");
-let span = document.querySelector("#roman");
-
-btn.addEventListener("click", function(e) {
-    
-    e.preventDefault();
+export function DecimalParaRoman(){
 
     let n = document.querySelector("#decimal").value;
-
 
     const Map = {
         u: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], //unidade
@@ -16,8 +10,12 @@ btn.addEventListener("click", function(e) {
     };
 
 
-    if( n > 0 && n < 5999){
+    if( n < 0 && n > 5999){
 
+        window.alert("Valor inválido");
+
+    } else {
+        
         let NumberToString = Number(n).toString();
         let arry = NumberToString.split('').reverse();
 
@@ -33,15 +31,11 @@ btn.addEventListener("click", function(e) {
 
         let response = arry.reverse().join('');
 
-        // adicionando o resultado ao span visual
-        span.innerHTML = response;
-
-        // resetando o campo do input
         document.querySelector("#decimal").value='';
 
-    } else {
-        
-        window.alert("Valor inválido");
+        // adicionando o resultado ao span visual
+         return response;
         
     };
-});
+
+}
