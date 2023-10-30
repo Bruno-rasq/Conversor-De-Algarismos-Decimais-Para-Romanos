@@ -8,9 +8,6 @@
 ## License 
 ![License](https://img.shields.io/github/license/dyarleniber/react-workflow-gh-actions)
 
-## Acesso
-<a href='https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/' target='_blank'>Roman-To-Decimal-Numbers_converter</a>
-
 Os números romanos foram o sistema de algarismos mais utilizado na Europa durante o Império Romano, antes de ser substituído pelos algarismos indo-arábicos, sistema que utilizamos atualmente. O sistema romano tinha como símbolos sete letras do alfabeto.
 
 - I -> 1
@@ -25,13 +22,13 @@ Os números romanos foram o sistema de algarismos mais utilizado na Europa duran
 
 - [X] O usuário deve ser capaz de inserir um número romano em um campo de Entrada.
 - [X] O usuário pode ver o resultado em um único campo de saida contendo o equivalente Decimal(base 10)
-    do número romano inserido pressionando um botão.
-- [] O usuário deverá ver uma mensagem de "Erro!" caso um simbolo errado for inserido.
+        do número romano inserido pressionando um botão.
+- [ ] O usuário deverá ver uma mensagem de "Erro!" caso um simbolo errado for inserido.
 
 
 ## Features Bônus:
 
-- [] O usuário poderá ver a converção acontecendo automaticamente enquanto digita.
+- [ ] O usuário poderá ver a converção acontecendo automaticamente enquanto digita.
 - [X] O usuário deverá ser capaz de converter de Romanos para Decimal (vice-versa).
 
 

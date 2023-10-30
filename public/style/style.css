@@ -27,37 +27,6 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid rgb(172, 130, 51);
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 30px;
-  padding-inline: 20px;
-  padding-block: 8px;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin-top: 11px;
-}
-header nav ul li a {
-  font-size: 1.8rem;
-  text-decoration: none;
-}
-header .logo {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: rgb(172, 130, 51);
-  font-family: "Times New Roman", Times, serif;
-}
-header .autor {
-  font-size: 0.9rem;
-  transform: translateX(-50%);
-}
-
 main {
   display: flex;
   flex: 1;
@@ -75,7 +44,7 @@ main h1 {
   font-size: 7.4rem;
   line-height: 100%;
   letter-spacing: -0.4rem;
-  color: rgb(172, 130, 51);
+  color: rgb(0, 0, 0);
 }
 main .subtitle {
   display: flex;
@@ -128,7 +97,8 @@ main .arrow a span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(172, 130, 51);
+  background-image: url(/assets/pexels-chait-goli-1797161.jpg);
+  background-size: cover;
   border-radius: 15px 15px 0 0;
 }
 .convert .abas {
@@ -207,19 +177,6 @@ main .arrow a span {
   height: 3px;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: black;
-  gap: 20px;
-  font-size: 0.9em;
-  padding: 15px;
-}
-
-/* utilitarios */
 .hide {
   display: none;
 }/*# sourceMappingURL=style.css.map */

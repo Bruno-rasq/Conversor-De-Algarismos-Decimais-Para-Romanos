@@ -1,6 +1,8 @@
 @import "./components/globals";
-@import "./components/header";
 @import "./components/main";
 @import "./components/inputSection";
-@import "./components/footer";
-@import "./components/utilities"
+
+//util
+.hide{
+    display: none;
+}
