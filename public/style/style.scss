@@ -1,8 +1,2 @@
-@import "./components/globals";
-@import "./components/main";
-@import "./components/inputSection";
-
-//util
-.hide{
-    display: none;
-}
+@import './components/reset';
+@import './components/main';

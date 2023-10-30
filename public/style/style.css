@@ -2,181 +2,72 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  list-style: none;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  position: relative;
-  font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(0.45turn, rgb(189, 176, 161) 0% 10%, white);
 }
-body::-webkit-scrollbar {
-  width: 7px;
-}
-body::-webkit-scrollbar-track {
-  background-color: white;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(172, 130, 51);
-  border-radius: 20px;
-  border: 3px solid rgb(172, 130, 51);
+
+header {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
+  width: 100%;
+  height: 93%;
   display: flex;
-  flex: 1;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 80rem;
-  margin: 0 auto;
-  padding-top: 60px;
 }
 main h1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  font-size: 7.4rem;
-  line-height: 100%;
-  letter-spacing: -0.4rem;
-  color: rgb(0, 0, 0);
+  font-size: 3em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
 }
-main .subtitle {
-  display: flex;
-  flex-direction: column;
-  max-width: 50rem;
-  color: rgb(139, 102, 33);
-  justify-content: right;
-}
-main .subtitle span {
-  color: rgb(172, 130, 51);
-}
-main .arrow {
-  margin-top: 5rem;
-  position: relative;
-  width: 50px;
-  height: 45px;
-}
-main .arrow a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  border: none;
-  background-color: transparent;
-  width: 100%;
-  height: 170%;
-  position: absolute;
-  left: 50%;
-  top: 15%;
-  transform: translate(-50%, -50%);
-  animation: down 0.7s ease-in-out alternate-reverse infinite;
-}
-@keyframes down {
-  from {
-    top: 15%;
-  }
-  to {
-    top: 95%;
-  }
-}
-main .arrow a span {
-  font-size: 3.5rem;
-  color: rgb(172, 130, 51);
+main h2 {
+  font-size: 1em;
+  line-height: 1em;
+  color: rgb(143, 135, 108);
 }
 
-.convert {
-  margin: 4.5% auto 0 auto;
-  max-width: 80rem;
-  height: 570px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(/assets/pexels-chait-goli-1797161.jpg);
+main .img-main {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+main .img-main img {
+  width: 110%;
+  height: 110%;
   background-size: cover;
-  border-radius: 15px 15px 0 0;
-}
-.convert .abas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 45px;
-  width: 100%;
-  margin-block: 100px 100px;
-}
-.convert .abas button {
-  height: 60px;
-  min-width: 180px;
-  padding: 5px;
-  outline: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: all 0.9s;
-  background-color: rgb(221, 221, 221);
-  color: black;
-}
-.convert .abas .active {
-  background-color: rgb(27, 20, 58);
-  color: white;
-}
-.convert form {
-  width: 550px;
-  margin: 0 auto 15px auto;
-  display: flex;
-  flex-direction: column;
-}
-.convert form input {
-  height: 40px;
-  width: 100%;
-  outline: none;
-  padding-inline: 10px;
-  margin-block: 10px;
-}
-.convert form button {
-  height: 40px;
-  width: 100%;
-  border: none;
-  color: white;
-  background-color: rgb(27, 20, 58);
-  transition: all 0.8s;
-  cursor: pointer;
-}
-.convert form button:hover {
-  background-color: rgb(10, 6, 27);
-}
-.convert form p,
-.convert form span {
-  color: white;
-}
-.convert form span {
-  margin: 20px auto 0 auto;
-  font-size: 2rem;
-}
-.convert form span::before {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  height: 3px;
-}
-.convert form span::after {
-  content: "";
-  display: block;
-  width: 100%;
-  background-color: white;
-  border: none;
-  border-radius: 5px;
-  height: 3px;
 }
 
-.hide {
-  display: none;
+.buttons {
+  margin-block: 35px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-main {
+  width: 150px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn-main:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=style.css.map */

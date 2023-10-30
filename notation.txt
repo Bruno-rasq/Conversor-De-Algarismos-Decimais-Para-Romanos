@@ -12,3 +12,5 @@ NOTA:
     - link de acesso: https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/
 
     - Adicionei um script main.js que import funções de decToRom.js e RomanToDecimal.js
+
+    -<a target="_blank" href="https://icons8.com/icon/32320/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

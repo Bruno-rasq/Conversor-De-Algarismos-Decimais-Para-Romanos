@@ -1,80 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Algarismos Romanos</title>
+    <title>Main</title>
 
-    <!-- font -->
+    <!-- css -->
+    <link rel="stylesheet" href="./public/style/style.css">
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap" rel="stylesheet">
-
-    <!-- google icons -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-    <!-- Scripts -->
-    <script type="module" src="./public/js/main.js" defer></script>
-    <script src="./public/js/DataControl.js" defer></script>
-
-    <!-- style -->
-    <link rel="stylesheet" href="./public/style/style.css">
-    <link rel="stylesheet" href="./public/style/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    
+    <header>
+        <p class="logo">MMXXIII</p>
+    </header>
     <main>
 
-        <h1>
-            <span>DecToRom</span>
-            <span>Converta Decimal</span>
-            <span>para Romano.</span>
-        </h1>
-        
-        <p class="subtitle">conversor de algarismos em formato decimal para o formato de algarismos romanos,
-            <span>e vice-versa. </span>
-        </p>
+        <div class="img-main">
+            <img src="./assets/coliseu.png" alt="coliseu art">
+        </div>
 
-        <div class="arrow">
-    
-            <a href="#convert">
-                <span class="material-symbols-outlined">
-                    keyboard_double_arrow_down
-                </span>
+        <h1>Conversor Online</h1>
+        <h2>converta algarismos da base 10(decimal) para Romanos (vice-versa).</h2>
+
+        <div class='buttons'>
+            <button class="btn-main">Romano</button>
+            <button class="btn-main">Decimal</button>
+        </div>
+
+        <div class="social">
+
+            <a href="https://github.com/Bruno-rasq" target="_blank">
+                <img src="./assets/icons8-github.svg"></img>
+            </a>
+
+            <a href="https://www.instagram.com/001.07.22/" target="_blank">
+                <img src="./assets/icons8-instagram.svg"></img>
             </a>
 
         </div>
-
     </main>
-
-    <div class="convert" id="convert">
-
-        <div class="abas">
-            <button data-aba="ToRoman" class="active"> Decimal para romano.</button>
-            <button data-aba="ToDecimal" class=""> Romano para decimal.</button>
-        </div>
-        
-        <div data-content="decToRom">
-            <form action="" >
-                <p class="title">Converta decimais para o formato de algarismos romanos.</p>
-                <p>Valores válidos estão entre 1 e 699.</p>
-                <input type="number" name="decimal" id="decimal" placeholder="Decimal" required>
-                <button type="submit" id="btn-submit">Converter.</button>
-                <span id="roman"></span>
-            </form>
-        </div>
-
-        <div data-content="RomToDec" class="hide">
-            <form action="">
-                <p class="title">Converta algarismos romanos para o formato decimal.</p>
-                <input type="text" name="roman" id="roman-input" placeholder="Roman" required>
-                <button type="submit" id="decimal-submit">Converter</button>
-                <span id="decimal-Span"></span>
-            </form>
-        </div>
-
-    </div>
     
 </body>
 </html>
