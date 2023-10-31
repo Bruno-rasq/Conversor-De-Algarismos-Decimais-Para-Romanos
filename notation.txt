@@ -1,18 +1,20 @@
 
 BUG´s:
-    - resultado do formulário rom To Dec não funcionando no projeto mas sim no console log.[RESOLVIDO]
-    
-    - quando $click nas abas de seleção de formulário, possivel mudar o form clickando no mesmo botão
-        -- sugestão: o problema está na propriedade classlist $Toggle.
         
     - script RomToDec, não funciona exatamente como deveria. possibilitando repetir um algarismo romn mais de 3x
 
 
 NOTA:
-    - link de acesso: https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/
 
     - Adicionei um script main.js que import funções de decToRom.js e RomanToDecimal.js
+    - fazer o data-building dos formulários.
+    - arrumar alguns estilos/refatorar css para sass
+    - Atualizar deploy do github pages
 
-    -<a target="_blank" href="https://icons8.com/icon/32320/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
-    -Foto de Setu Chhaya: https://www.pexels.com/pt-br/foto/heranca-patrimonio-sucessao-antigo-3526629/
+LINKs:
+
+    - link de acesso: https://bruno-rasq.github.io/Conversor-De-Algarismos-Decimais-Para-Romanos/
+    - Foto de Setu Chhaya: https://www.pexels.com/pt-br/foto/heranca-patrimonio-sucessao-antigo-3526629/
+    - https://icons8.com/icon/32320/instagram
+    - https://icons8.com
