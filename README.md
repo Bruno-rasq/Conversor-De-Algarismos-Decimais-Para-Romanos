@@ -20,8 +20,8 @@ Os números romanos foram o sistema de algarismos mais utilizado na Europa duran
 
 ## Usuário deverá:
 
-- [X] O usuário deve ser capaz de inserir um número romano em um campo de Entrada.
-- [X] O usuário pode ver o resultado em um único campo de saida contendo o equivalente Decimal(base 10)
+- [ ] O usuário deve ser capaz de inserir um número romano em um campo de Entrada.
+- [ ] O usuário pode ver o resultado em um único campo de saida contendo o equivalente Decimal(base 10)
         do número romano inserido pressionando um botão.
 - [ ] O usuário deverá ver uma mensagem de "Erro!" caso um simbolo errado for inserido.
 
@@ -29,7 +29,7 @@ Os números romanos foram o sistema de algarismos mais utilizado na Europa duran
 ## Features Bônus:
 
 - [ ] O usuário poderá ver a converção acontecendo automaticamente enquanto digita.
-- [X] O usuário deverá ser capaz de converter de Romanos para Decimal (vice-versa).
+- [ ] O usuário deverá ser capaz de converter de Romanos para Decimal (vice-versa).
 
 
 ## Ferramentas
