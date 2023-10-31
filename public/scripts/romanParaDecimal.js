@@ -1,6 +1,6 @@
 export function RomanoParaDecimal(){
 
-    let strg = document.querySelector("#roman-input").value.toUpperCase();
+    let strg = document.querySelector("#roman").value.toUpperCase();
 
     const decimal = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
     const roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
@@ -8,7 +8,7 @@ export function RomanoParaDecimal(){
     // verfica se o valor do input é válido
     if (strg == '' || typeof strg !== 'string' || strg == undefined) {
 
-        window.alert('erro: valor inválido');
+        return "ERRO: Valor inserido inválido!"
 
     } else {
 
@@ -25,4 +25,4 @@ export function RomanoParaDecimal(){
 
         return Number(arabics);
     }
-}
+};

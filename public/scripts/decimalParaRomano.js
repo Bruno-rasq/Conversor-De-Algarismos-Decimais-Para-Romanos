@@ -6,13 +6,13 @@ export function DecimalParaRoman(){
         u: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], //unidade
         d: ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"], //dezena
         c: ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"], //centena
-        m: ["M", "MM", "MMM", "MMMM", "MMMMM"] // milhar
+        m: ["M", "MM", "MMM", "MMMM", "MMMMM", "MMMMMM", "MMMMMMM", "MMMMMMMM", "MMMMMMMMM"] // milhar
     };
 
 
-    if( n < 0 && n > 5999){
+    if( n <= 0 || n > 9999){
 
-        window.alert("Valor inválido");
+        return "ERRO: Valor Inserido inválido!"
 
     } else {
         
@@ -38,4 +38,4 @@ export function DecimalParaRoman(){
         
     };
 
-}
+};
