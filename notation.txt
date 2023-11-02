@@ -3,13 +3,13 @@ BUG´s:
         
     - script RomToDec, não funciona exatamente como deveria. possibilitando repetir um algarismo romn mais de 3x
 
-
 NOTA:
 
     - Adicionei um script main.js que import funções de decToRom.js e RomanToDecimal.js
-    - fazer o data-building dos formulários.
+    - converção automatica ao input implementada.
     - arrumar alguns estilos/refatorar css para sass
     - Atualizar deploy do github pages
+    - refatorar scripts
 
 
 LINKs:
