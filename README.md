@@ -6,7 +6,7 @@
 </div>
 
 ## License 
-![License](https://img.shields.io/github/license/dyarleniber/react-workflow-gh-actions)
+![License](https://img.shields.io/github/license/)
 
 Os números romanos foram o sistema de algarismos mais utilizado na Europa durante o Império Romano, antes de ser substituído pelos algarismos indo-arábicos, sistema que utilizamos atualmente. O sistema romano tinha como símbolos sete letras do alfabeto.
 
@@ -28,7 +28,7 @@ Os números romanos foram o sistema de algarismos mais utilizado na Europa duran
 
 ## Features Bônus:
 
-- [ ] O usuário poderá ver a converção acontecendo automaticamente enquanto digita.
+- [x] O usuário poderá ver a converção acontecendo automaticamente enquanto digita.
 - [x] O usuário deverá ser capaz de converter de Romanos para Decimal (vice-versa).
 
 

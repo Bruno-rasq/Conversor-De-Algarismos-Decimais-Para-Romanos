@@ -9,7 +9,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script type="module" src="/public/scripts/Main2.js" defer></script>
+    <!-- <script type="module" src="/public/scripts/Main2.js" defer></script> -->
+    <script src="/public/scripts/scriptTest2.js" defer></script>
+    
 </head>
 <body>
 
@@ -28,9 +30,9 @@
     </div>
 
     <div class="form">
-        <input type="text" placeholder="exm: XX, MXII, IV ...." id="roman">
+        <input type="text" placeholder="exm: XX, MXII, IV ...." id="roman" oninput="getValue()">
         <span class="input-response" contenteditable="true" id="Span-roman"></span>
-        <button type="submit" id="btn-roman">Converter</button>
+        <!-- <button type="submit" id="btn-roman">Converter</button> -->
     </div>
     
 </body>
