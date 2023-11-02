@@ -6,7 +6,7 @@
 </div>
 
 ## License 
-![License](https://img.shields.io/github/license/{Bruno-rasq}/{Conversor-De-Algarismos-Decimais-Para-Romanos}.svg)
+![License](https://img.shields.io/github/license/Rasquinha_/Conversor-De-Algarismos-Decimais-Para-Romanos.svg)
 
 Os números romanos foram o sistema de algarismos mais utilizado na Europa durante o Império Romano, antes de ser substituído pelos algarismos indo-arábicos, sistema que utilizamos atualmente. O sistema romano tinha como símbolos sete letras do alfabeto.
 
