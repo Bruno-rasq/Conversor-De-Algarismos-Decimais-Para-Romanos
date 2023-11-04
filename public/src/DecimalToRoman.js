@@ -1,6 +1,6 @@
-export function DecimalParaRoman(){
+function DecimalToRoman(value){
 
-    let n = document.querySelector("#decimal").value;
+    let response;
 
     const Map = {
         u: ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"], //unidade
@@ -9,33 +9,38 @@ export function DecimalParaRoman(){
         m: ["M", "MM", "MMM", "MMMM", "MMMMM", "MMMMMM", "MMMMMMM", "MMMMMMMM", "MMMMMMMMM"] // milhar
     };
 
+    if(value <= 0 || value > 99999){
 
-    if( n <= 0 || n > 9999){
-
-        return "ERRO: Valor Inserido inválido!"
-
-    } else {
+        response = 'ERRO: Valor Inserido Inválido!';
         
-        let NumberToString = Number(n).toString();
-        let arry = NumberToString.split('').reverse();
+    }else {
 
+        let NumberToString = Number(value).toString();
+        let arry = NumberToString.split('').reverse();
+    
         let uni = Number(arry[0]);
         let dez = Number(arry[1]);
         let cen = Number(arry[2]);
         let mil = Number(arry[3]);
-
+    
         arry[0] = Map.u[uni - 1] ?? "";
         arry[1] = Map.d[dez - 1] ?? "";
         arry[2] = Map.c[cen - 1] ?? "";
         arry[3] = Map.m[mil - 1] ?? "";
+    
+        response = arry.reverse().join('');
+    }
 
-        let response = arry.reverse().join('');
+    return response
+}
 
-        document.querySelector("#decimal").value='';
+function getValueDecimal() {
 
-        // adicionando o resultado ao span visual
-         return response;
-        
-    };
+    let input = document.querySelector('#decimal');
+    let value = input.value;
+    let span = document.querySelector('#span-decimal')
+
+   let resp = DecimalToRoman(value)
+   span.innerHTML = resp
 
 };
