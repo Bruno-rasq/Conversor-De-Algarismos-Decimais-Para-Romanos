@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>MMXXIII</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 
     <!-- css -->
     <link rel="stylesheet" href="./public/style/style.css">
@@ -17,10 +19,13 @@
     <script src="/public/src/DecimalToRoman.js" defer></script>
     <script src="/public/src/RomanToDecimal.js" defer></script>
 
+    <!-- Google Materials -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
     
-    <header>
+    <header id="header">
         <a href="/index.html" class="logo">MMXXIII</a>
     </header>
     <main>
@@ -50,54 +55,57 @@
         </div>
     </main>
 
-    <section class="forms-sections" id="form-decimal-to-roman">
+    <section class="content">
 
-        <div class="text">
-            <div>
-                <a href="/index.html">
-                    <span class="material-symbols-outlined">
-                        arrow_back
-                    </span>
-                </a>
-            </div>
-            <div>
-                <p>Converta Algarismo decimais de base 10</p>
-                <p>para Algarismos Romanos.</p>
-            </div>
+        <div>
+            <h2>#Um pouco de Historia:</h2>
+
+        <p>Os números romanos foram o sistema de algarismos mais utilizado na Europa durante o Império Romano, antes de ser substituído pelos algarismos indo-arábicos, sistema que utilizamos atualmente. O sistema romano tinha como símbolos sete letras do alfabeto.</p>
+
+        <ul>
+            <li>I -> 1</li>
+            <li>V -> 5</li>
+            <li>X -> 10</li>
+            <li>L -> 50</li>
+            <li>C -> 100</li>
+            <li>D -> 500</li>
+            <li>M -> 1000</li>
+        </ul>
+
+        <p>Os demais números são descritos pela repetição desses símbolos, levando-se em consideração que também existem regras específicas, a depender da posição dos seus algarismos. Esse sistema de numeração era útil para o dia a dia dos romanos, porém, para realização de contas, ele é pouco eficiente, e por isso hoje utilizamos o sistema decimal posicional. Ainda há algumas representações em números romanos, por exemplo, os séculos e tópicos de uma determinada lei.</p>
+
+        <p>Veja mais sobre "Números romanos (algarismos romanos)" em: <a href="https://brasilescola.uol.com.br/matematica/algarismos-romanos.html" target="_blank">Brasilescola</a></p>
         </div>
-    
+
+        <div id="form-decimal-to-roman">
+            <h2>#Converta Decimais para Algarismos Romanos:</h2>
+
+            <p>Para converter basta digitar o valor no input de entrada e a converção será feita automaticamente, lembrando que Números com casas decimais (exm: 3,5 ou 10,2), negativos ou zero(0) não existem em algarismos romanos e a entrada destes valores ocasionará um ERRO.
+            </p>
+        </div>
+
         <div class="form">
             <input type="text" id='decimal' oninput="getValueDecimal()"
                 placeholder="Insira valores decimais. exm: 10, 5, 2 etc...">
             <span class="input-response" contenteditable="true" id="span-decimal"></span>
-            <!-- <button type="submit" id="btn-decimal-submit">Converter</button> -->
         </div>
 
-    </section>
+        <div id="form-roman-to-decimal">
+            <h2>#Converta Algarismos Romanos para Decimais:</h2>
 
-    <section class="forms-sections" id="form-roman-to-decimal">
+            <p>Para converter algarismos romanos para decimais de base10 basta inserir o valor requisitado no campo de input abaixo e a converção será feita automaticamente, lembrando que os caracteres aceitos são: I, V, X, L, D e M</p>
 
-        <div class="text">
-            <div>
-                <a href="/index.html">
-                    <span class="material-symbols-outlined">
-                    arrow_back
-                    </span>
-                </a>
-            </div>
-            <div>
-                <p>Converta Algarismo Romanos</p>
-                <p>para Algarismos decimais de base 10.</p>
-            </div>
         </div>
-    
+
         <div class="form">
             <input type="text" placeholder="exm: XX, MXII, IV ...." id="roman" oninput="getValueRoman()">
             <span class="input-response" contenteditable="true" id="Span-roman"></span>
-            <!-- <button type="submit" id="btn-roman">Converter</button> -->
         </div>
 
+
     </section>
+
+   
     
 </body>
 </html>
