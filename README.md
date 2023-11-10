@@ -1,8 +1,9 @@
 # Conversor-De-Algarismos-Decimais-Para-Romanos
 
-<div>
-    <img src='./assets/pexels-chait-goli-1797161.jpg' height='auto' width='100%' backgroundSize='cover'></img>
-    <p>Image By <a href='https://www.instagram.com/chaitaastic_clicks'>@chaitaastic</a></p>
+<div align-items='center'>
+    <img src='/assets/coliseu.png'>
+    <!-- <img src='./assets/pexels-chait-goli-1797161.jpg' height='auto' width='100%' backgroundSize='cover'></img>
+    <p>Image By <a href='https://www.instagram.com/chaitaastic_clicks'>@chaitaastic</a></p> -->
 </div>
 
 ## License 
@@ -32,7 +33,7 @@ Os números romanos foram o sistema de algarismos mais utilizado na Europa duran
 - [x] O usuário deverá ser capaz de converter de Romanos para Decimal (vice-versa).
 
 
-## Ferramentas
+## Stack
 
 <div align='center'>
     <img src='https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black'></img>
