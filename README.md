@@ -1,9 +1,7 @@
-# Conversor-De-Algarismos-Decimais-Para-Romanos
+# Conversor-De-Algarismos-Decimais-Para-Romanos: MMXXIII;
 
-<div align-items='center'>
-    <img src='/assets/coliseu.png'>
-    <!-- <img src='./assets/pexels-chait-goli-1797161.jpg' height='auto' width='100%' backgroundSize='cover'></img>
-    <p>Image By <a href='https://www.instagram.com/chaitaastic_clicks'>@chaitaastic</a></p> -->
+<div align='center'>
+    <img src='/assets/coliseu.png' width='150px' height='150px'>
 </div>
 
 ## License 
